@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="assets/css/main.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 		<meta property="og:site_name" content="Shehmeer Jiwani">
     	<meta property="og:title" content="Shehmeer Jiwani">
     	<meta property="og:description" content="atlanta software engineer, producer, rap aficionado.">
@@ -14,9 +15,19 @@
 	</head>
 	<body>
 		<header id="header">
-			<h1 class="tagline">atlanta software engineer, producer, rap aficionado.</h1>
-			<div class="stuff">
-				<p class="social"><a class="github" href="http://github.com/dragonai"><i class="fa fa-github fa-2x"></i></a><a class="facebook" href="http://facebook.com/dragonai"><i class="fa fa-facebook fa-2x"></i></a><a class="twitter" href="http://twitter.com/mrjiwani"><i class="fa fa-twitter fa-2x"></i></a><a class="soundcloud" href="http://soundcloud.com/dragonai"><i class="fa fa-soundcloud fa-2x"></i></a><a class="email" href="mailto:shehmeer@gatech.edu"><i class="fa fa-envelope-o fa-2x"></i></a></p>
+			<!-- Photo creds go to my boys @ Chromalogue Photography! instagram.com/chromalogue_photography -->
+			<img class="headshot" src="assets/images/headshot.jpg"/>
+			<h1 align="center" class="tagline">atlanta software engineer, producer, rap aficionado.</h1>
+		</header>
+		<div class="content">
+			<div class="formatted-content">
+				<p class="social">
+					<a class="github" href="http://github.com/dragonai"><i class="fa fa-github fa-2x"></i></a>
+					<a class="facebook" href="http://facebook.com/dragonai"><i class="fa fa-facebook fa-2x"></i></a>
+					<a class="twitter" href="http://twitter.com/mrjiwani"><i class="fa fa-twitter fa-2x"></i></a>
+					<a class="soundcloud" href="http://soundcloud.com/dragonai"><i class="fa fa-soundcloud fa-2x"></i></a>
+					<a class="email" href="mailto:shehmeer@gatech.edu"><i class="fa fa-envelope-o fa-2x"></i></a>
+				</p>
 				<p>B.S. Computer Science (Intelligence + Information Internetworks) @ <a class="gatech" href="http://gatech.edu">Georgia Tech</a> (2016)</p>
 				<p>Currently:</a></p>
 				<ul class="currently">
@@ -38,9 +49,9 @@
 				</ul>
 				<p>Initiatives:</a></p>
 				<ul class="initiatives">
-					<li>Founder and Director @ <a href="http://hackgt.com">HackGT</a>, Georgia Tech's official national hackathon (2014 & 2015)</li>
+					<li>Founder and Director @ <a href="http://hack.gt">HackGT</a>, Georgia Tech's official national hackathon (2014 & 2015)</li>
 					<li>Co-Director @ <a href="http://startup.exchange">Startup Exchange</a>, GT's central entrepreneurship hub (2014 - 2016)</li>
-					<li>Founding member @ <a href="http://facebook.com/BuzzBeats">BuzzBeats</a>, GT's premier beatboxing crew (2012 - 2016)</li>
+					<li>Co-Founder @ <a href="http://facebook.com/BuzzBeats">BuzzBeats</a>, GT's premier beatboxing crew (2012 - 2016)</li>
 				</ul>
 				<p>Press:</a></p>
 				<ul class="projects">
@@ -50,6 +61,17 @@
 					<li>2015 InVenture Prize finals <a href="https://inventureprize.gatech.edu/previous-competitions/2015">(Teams homepage)</a> <a href="https://www.youtube.com/watch?v=0GCR-TH7Op4&t=5m6s">(Finals footage)</a></li>
 				</ul>
 			</div>
-		</header>
+		</div>
+		<footer>
+		<script>
+			var pattern = Trianglify({
+				width: window.innerWidth,
+				height: document.documentElement.scrollHeight,
+				x_colors: 'YlGnBu',
+				y_colors: 'match_x'
+			});
+			document.body.style.background = 'url(' + pattern.canvas().toDataURL() + ')';
+		</script>
+		</footer>
 	</body>
 </html>
